@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#terminal {
+    display: inline-block;
+    text-align: left;
+    white-space: pre-line;
+    border: 2px solid green;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#oteria {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Cybersécurité</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="terminal"></div>
+    <div id="oteria">OTERIA j'arrive :)</div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = "\nSystème d'analyse en cours...\n\n" +
+                         "Candidat détecté: Dynamique, Perseverante, Créative et Esprit d'équipe sont ce qui semble essentiel pour s'adapter au monde de la cysbersécurité !\n" +
+                         "Compétences: Pentesting, Sécurité offensive, Développement sécurisé\n" +
+                         "Mission: Rejoindre un Master d'excellence en cybersécurité qui est le votre !\n\n" +
+                         "Pourquoi avoir choisi Otéria ? Je souhaite appronfondir mes compétences et me former davantage et je sais que votre Master propose tous les aspects nécéssaires pour me faire devenir un jour un expert en cybersécurité! \n" +
+                         "Analyse du dossier en cours...\n" +
+                         "Dossier envoyé.\n";
+            const terminal = document.getElementById("terminal");
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    terminal.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                } else {
+                    setTimeout(() => {
+                        terminal.style.display = "none";
+                        document.getElementById("oteria").style.display = "block";
+                    }, 2000);
+                }
+            }
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
